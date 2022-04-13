@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg,#a4508b, #600b87);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 184px;
+    height: 184px;
+    background-color: #fff;
+    border: solid 4px black;
+    margin: 20px;
+}
+
+.draggable {
+    height: 100%;
+}
+
+.draggable img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-image: url('https://previews.123rf.com/images/tiniroma/tiniroma1704/tiniroma170400366/75918260-ritratto-di-6-anni-teen-bella-ragazza-felice-in-stile-vintage.jpg');
+}
+
+.dragging {
+    border: solid 4px red;
+}

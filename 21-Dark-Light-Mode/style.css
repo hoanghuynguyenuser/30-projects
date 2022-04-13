@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --primary-color: #0a6cf1;
+    --bg-color: #eeeeee;
+    --box-color: #dadada;
+    --text-color:  #383333;
+    background-color: var(--bg-color);
+}
+
+body.dark {
+    --primary-color: #4daf54;
+    --bg-color: #2d2c2d;
+    --box-color: #3b3a3b;
+    --text-color:  #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.toggle label {
+    background-color: #bbb;
+    width: 80px;
+    height: 28px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+}
+
+/* .toggle label::after {
+    content: '';
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.2s ease;
+
+} */
+
+.toggle .circle {
+    content: '';
+    background-color: white;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    position: absolute;
+    /* top: 0; */
+    transition: all 0.2s ease;
+}
+
+.toggle .circle.active {
+    transform: translateX(calc(80px - 100%));
+    /* transform: translateX(-100%); */
+    transition: all 0.2s ease;
+}
+
+
+
+input:checked + label {
+    background-color: var(--primary-color);
+}
+
+input:checked + label::after {
+    transform: translateX(56px);
+}
+
+#toggle-btn {
+    display: none;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.about .title {
+    color: var(--primary-color);
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.about .info {
+    background-color: var(--box-color);
+    padding: 40px;
+    width: 900px;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .info p {
+    color: var(--text-color);
+}
+
+.about .info-btn {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.about .btn-item {
+    width: 106px;
+    height: 32px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+
+}

@@ -1,0 +1,33 @@
+body {
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+h1 {
+	margin-top: 200px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.range {
+	width: 500px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	margin: 0 auto;
+}
+
+.range-bar {
+	width: 40%;
+	height: 100%;
+	background: linear-gradient(90deg, #ba69cc, #266bac);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.range-bar span {
+	font-size: 26px;
+	color: #fff;
+}
